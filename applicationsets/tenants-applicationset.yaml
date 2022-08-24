@@ -24,5 +24,4 @@ spec:
       destination:
         server: '{{k8s_cluster.address}}'
         namespace: '{{k8s_cluster.namespace}}'
-      syncPolicy:
-        automated: {}
+
