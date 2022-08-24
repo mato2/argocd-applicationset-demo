@@ -5,8 +5,8 @@ metadata:
 spec:
   generators:
     - git:
-        repoURL: https://github.com/xsreality/argocd-applicationset-demo.git
-        revision: main
+        repoURL: https://github.com/kostis-codefresh/argocd-applicationset-demo.git
+        revision: HEAD
         files:
           - path: "argocd/tenants-discovery/**/config.json"
   template:
@@ -16,7 +16,7 @@ spec:
       project: default
       source:
         repoURL: https://github.com/kostis-codefresh/argocd-applicationset-demo.git
-        targetRevision: main
+        targetRevision: HEAD
         path: 'tenants/{{tenant.id}}'
         helm:
           valueFiles:
