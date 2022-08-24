@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: tenant-appsets
+  name: tenant-appsets-demo
   # You'll usually want to add your resources to the argocd namespace.
   namespace: argocd
   # Add a this finalizer ONLY if you want these to cascade delete.
@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: https://github.com/kostis-codefresh/argocd-applicationset-demo.git
     targetRevision: HEAD
-    path: applicationsets
+    path: ./applicationsets
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
