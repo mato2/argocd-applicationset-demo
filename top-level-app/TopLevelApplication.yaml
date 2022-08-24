@@ -12,7 +12,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/kostis-codefresh/argocd-applicationset-demo.git
-    targetRevision: argocd-applicationsets
+    targetRevision: HEAD
     path: applicationsets
   destination:
     server: https://kubernetes.default.svc
