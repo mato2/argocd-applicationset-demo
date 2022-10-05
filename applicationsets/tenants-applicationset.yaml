@@ -24,4 +24,11 @@ spec:
       destination:
         server: '{{k8s_cluster.address}}'
         namespace: '{{k8s_cluster.namespace}}'
+      syncPolicy:
+        automated:
+          selfHeal: true
+          prune: true
+          allowEmpty: true
+        syncOptions:
+        - CreateNamespace=true
 
