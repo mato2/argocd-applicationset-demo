@@ -8,7 +8,7 @@ wordpress:
   ## First name
   ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
   ##
-  wordpressFirstName: Phillip
+  wordpressFirstName: Mato
   ## Last name
   ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
   ##
@@ -16,4 +16,4 @@ wordpress:
   ## Blog name
   ## ref: https://github.com/bitnami/bitnami-docker-wordpress#environment-variables
   ##
-  wordpressBlogName: ECorp's Blog!
+  wordpressBlogName: Mattos's Blog!
